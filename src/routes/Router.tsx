@@ -1,10 +1,6 @@
-
-
+import { Login, Register, Panel } from '../pages'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Login from '../pages/Login'
-import Panel from '../pages/Panel'
-import Register from '../pages/Register'
 
 export function Router() {
   return (
