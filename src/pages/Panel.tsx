@@ -1,21 +1,19 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import { PanelAside, PanelChat } from '../components'
+import { ChatPanel } from '../components/pages/panel/chat/ChatPanel'
+import { HomePanel } from '../components/pages/panel/home/HomePanel'
 
 export default function Panel() {
 
-  const mensagens = [
-    {
-      id: 1,
-      name: 'Douglas',
-      menssage: 'Olá Pessoas, tudo bem com vcs ?',
-      img: 'd'
-    }
-  ]
-
   return (
-    <main className='bg-800-gray w-full h-screen grid grid-cols-[100px_minmax(900px,_1fr)] items-start'>
+    <main className='bg-800-gray w-full h-screen flex'>
       <PanelAside />
-      <PanelChat />
+      
+      <Routes>
+        <Route path='/home' element={<HomePanel />} />
+        <Route path='/chat' element={<ChatPanel />} />
+      </Routes>
 
     </main>
   )

@@ -1,5 +1,4 @@
-import React from 'react'
-import { ChatMessages } from './ChatMessages'
+import { SendMessages } from './SendMessages'
 import { HeaderPanel } from './HeaderPanel'
 import { InfoGroupsUsers } from './InfoGroupsUsers'
 
@@ -10,7 +9,7 @@ export function PanelChat() {
       <HeaderPanel />
       <div className='h-full grid grid-cols-[400px_minmax(900px,_1fr)]'>
         <InfoGroupsUsers />
-        <ChatMessages />
+        <SendMessages />
       </div>
     </section>
   )

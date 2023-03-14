@@ -9,7 +9,7 @@ export function PanelAside() {
   let la = true
 
   return (
-    <aside className='flex flex-col items-center justify-around border-r-2 border-700-gray h-full'>
+    <aside className='max-w-[7rem] w-full h-full flex flex-col items-center justify-around border-r-2 border-700-gray'>
       <div className='flex flex-col items-center'>
         <div className='content-[""] w-8 h-8 bg-white rounded-full '></div>
         <span className='text-xs w-full text-white'>Douglas Nadoti</span>

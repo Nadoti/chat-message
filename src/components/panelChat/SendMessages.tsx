@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function ChatMessages() {
+export function SendMessages() {
   return (
     <div className='flex flex-col'>
       <div className='bg-900-gray pt-10 pb-10'>
