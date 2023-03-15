@@ -1,12 +1,12 @@
 import React from 'react'
-import Chat from './PageChatComponents/Chat'
+import { ChatScreen } from './PageChatComponents/ChatScreen'
 import ContentUsersAdd from './PageChatComponents/ContentUsersAdd'
 
 export function ChatPanel() {
   return (
-    <main className='w-full h-full flex '>
+    <main className='w-full h-full flex'>
       <ContentUsersAdd />
-      <Chat />
+      <ChatScreen />
     </main>
   )
 }

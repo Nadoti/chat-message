@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { PanelAside, PanelChat } from '../components'
+import { PanelAside } from '../components'
 import { ChatPanel } from '../components/pages/panel/chat/ChatPanel'
 import { HomePanel } from '../components/pages/panel/home/HomePanel'
 
