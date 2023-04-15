@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function ContentUsersAdd() {
+
   return (
     <section className='max-w-xs w-full h-full bg-900-gray'>
       <h2 className='text-3xl text-500-gray pt-5 pl-5'>Chat</h2>

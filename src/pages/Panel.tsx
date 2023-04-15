@@ -6,6 +6,7 @@ import { HomePanel } from '../components/pages/panel/home/HomePanel'
 
 export default function Panel() {
 
+
   return (
     <main className='bg-800-gray w-full h-screen flex'>
       <PanelAside />
