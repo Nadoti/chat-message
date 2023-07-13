@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { PanelAside } from '../components'
-import { ChatPanel } from '../components/pages/panel/chat/ChatPanel'
-import { HomePanel } from '../components/pages/panel/home/HomePanel'
+
+const RoutePanelHome = lazy(() => import('../components/pages/panel/home/HomePanel'))
+const RouteChatPanel = lazy(() => import('../components/pages/panel/chat/ChatPanel'))
 
 export default function Panel() {
 
@@ -12,8 +13,17 @@ export default function Panel() {
       <PanelAside />
       
       <Routes>
-        <Route path='/home' element={<HomePanel />} />
-        <Route path='/chat' element={<ChatPanel />} />
+        <Route path='/home' element={
+          <Suspense fallback={<h1>CARREGANDO</h1>}>
+              <RoutePanelHome />
+          </Suspense>
+        }/>
+
+        <Route path='/chat' element={
+          <Suspense fallback={<h1>CARREGANDO</h1>}>
+              <RouteChatPanel />
+          </Suspense>
+        }/>
       </Routes>
 
     </main>

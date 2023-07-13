@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { ChangeEventHandler } from 'react'
 
 interface InputProps {
   name: string,
   type: string,
-  value?: string,
-  onChange?: () => void,
+  value: string,
+  onChange: (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+    ) => void,
   placeholder: string
 }
 
